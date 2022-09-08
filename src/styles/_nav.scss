@@ -1,0 +1,20 @@
+@use 'vars' as *;
+
+.navbar {
+  background-color: $color-royal_blue;
+  position: fixed;
+  width: 100%;
+  &--menu {
+    display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    gap: $distance-1;
+    padding: $distance-1;
+    &--item {
+      // justify-self: flex-end;
+      &-left {
+        margin-right: auto;
+      }
+    }
+  }
+}
