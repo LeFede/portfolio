@@ -1,0 +1,17 @@
+@use 'vars' as *;
+
+#footer {
+  width: 100%;
+  border-top: .1em solid $main-red;
+  bottom: 0px;
+  display: block;
+  display: flex;
+  font-size: 30px;
+  line-height: 1em;
+  padding: 1em;
+  position: absolute;
+  justify-content: space-between;
+  p {
+    
+  }
+}

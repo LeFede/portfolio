@@ -1,0 +1,21 @@
+@use 'vars' as *;
+
+.section {
+  background-image: $gradient-1;
+  &:nth-child(even) {
+    background: $main-blue;
+  }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &--title {
+    text-align: center;
+  }
+  &--subtitle {
+    color: $main-red;
+    font-style: italic;
+    font-weight: 400;
+  }
+}

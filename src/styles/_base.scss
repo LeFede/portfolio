@@ -1,20 +1,69 @@
 @use 'vars' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Raleway:wght@400;700&display=swap');
+
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-size: 3em - ($i * .2em) ;
+    font-size: 4em - ($i * .2em);
   }
+}
+
+
+#main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.size-2 {
+  font-size: 1.5em;
 }
 
 :root {
   color: $color-white;
   --a: $color-coral;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: $font-1;
+  font-weight: 700;
 }
 
 .container {
   max-width: 720px;
   margin: auto;
+}
+
+html { overflow-y: overlay;}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 30px;
+}
+::-webkit-scrollbar-button {
+  // background-color : transparent;
+  // background-color: red;
+}
+::-webkit-scrollbar-thumb {
+  border: 10px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 99px;
+  background-color: #AAAAAA;
+  
+}
+::-webkit-scrollbar-track {
+  background-color : green;
+  background-color: transparent;
+
+}
+::-webkit-scrollbar-track-piece {
+  background-color : gray;
+  background-color: transparent;
+
+}
+::-webkit-scrollbar-corner {
+  color: coral;
+}
+::-webkit-resizer {
+  background-color : violet;
+  
 }
